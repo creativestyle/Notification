@@ -1,0 +1,32 @@
+{
+    "name": "creativestyle/notification",
+    "type": "library",
+    "description": "Notification component for PHP projects.",
+    "keywords": ["notification"],
+    "homepage": "http://creativestyle.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "creativestyle",
+            "homepage": "http://creativestyle.pl"
+        },
+        {
+            "name":     "Jakub Kanclerz"
+        }
+    ],
+    "require": {
+        "php":                      ">=5.3.3"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": { "Creativestyle\\Component\\Notification\\": "" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Creativestyle\\Component\\Notification\\spec\\": "spec/" }
+    }
+}
