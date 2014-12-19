@@ -15,7 +15,8 @@ class InsiteNotification
     protected $htmlContent;
     protected $imageSrc;
     protected $date;
-
+    protected $notification;
+    protected $subscriber;
 
     public function getArrayRepresentation()
     {
@@ -221,6 +222,54 @@ class InsiteNotification
     public function setImageSrc($imageSrc)
     {
         $this->imageSrc = $imageSrc;
+
+        return $this;
+    }
+
+    /**
+     * Gets the value of notification.
+     *
+     * @return mixed
+     */
+    public function getNotification()
+    {
+        return $this->notification;
+    }
+    
+    /**
+     * Sets the value of notification.
+     *
+     * @param mixed $notification the notification 
+     *
+     * @return self
+     */
+    public function setNotification($notification)
+    {
+        $this->notification = $notification;
+
+        return $this;
+    }
+
+    /**
+     * Gets the value of subscriber.
+     *
+     * @return mixed
+     */
+    public function getSubscriber()
+    {
+        return $this->subscriber;
+    }
+    
+    /**
+     * Sets the value of subscriber.
+     *
+     * @param mixed $subscriber the subscriber 
+     *
+     * @return self
+     */
+    public function setSubscriber($subscriber)
+    {
+        $this->subscriber = $subscriber;
 
         return $this;
     }

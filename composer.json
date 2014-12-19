@@ -9,9 +9,6 @@
         {
             "name": "creativestyle",
             "homepage": "http://creativestyle.pl"
-        },
-        {
-            "name":     "Jakub Kanclerz"
         }
     ],
     "require": {

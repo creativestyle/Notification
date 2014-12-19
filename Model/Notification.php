@@ -35,6 +35,7 @@ class Notification implements NotificationInterface, ObjectHolderInterface
     protected $subject;
     protected $body;
     protected $sentAt;
+    protected $insiteNotification;
 
     public function __construct()
     {
@@ -353,5 +354,29 @@ class Notification implements NotificationInterface, ObjectHolderInterface
     public function getObjectClass()
     {
         return $this->getObjectType();
+    }
+
+    /**
+     * Gets the value of insiteNotification.
+     *
+     * @return mixed
+     */
+    public function getInsiteNotification()
+    {
+        return $this->insiteNotification;
+    }
+    
+    /**
+     * Sets the value of insiteNotification.
+     *
+     * @param mixed $insiteNotification the insite notification 
+     *
+     * @return self
+     */
+    public function setInsiteNotification($insiteNotification)
+    {
+        $this->insiteNotification = $insiteNotification;
+
+        return $this;
     }
 }
